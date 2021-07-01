@@ -1,8 +1,8 @@
 ## TODO
--[ ] add network calls
+- [ ] add network calls
 
--[ ] parse results
+- [ ] parse results
 
--[ ] test github pages integration 
+- [ ] test github pages integration 
 
--[ ] create wiki/documentation 
+- [ ] create wiki/documentation 
