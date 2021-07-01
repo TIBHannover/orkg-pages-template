@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+a {
+    color:white;
+}
+a:visited {
+    color: white;
+}
+
+a:hover {
+     color: #007bff;
+}
