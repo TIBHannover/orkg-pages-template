@@ -1,6 +1,7 @@
 {
-  "name": "generated-demo-application",
-  "version": "0.1.0",
+  "name": "orkg-github-pages-template",
+  "homepage": "./",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.24",
