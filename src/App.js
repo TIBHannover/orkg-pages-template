@@ -18,6 +18,7 @@ class App extends Component {
             windowHeight: 100,
             windowWidth: 100
         };
+        this.githubRepoURL = '#CHANGE ME';
     }
 
     componentDidMount() {
@@ -66,7 +67,7 @@ class App extends Component {
                             </Tippy>
                             <Tippy content="Link to GitHub project">
                                 <span style={{ paddingRight: '10px' }}>
-                                    <a href="http://google.com">
+                                    <a href={this.githubRepoURL}>
                                         <FaGithub size={35} />
                                     </a>
                                 </span>
