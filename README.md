@@ -6,9 +6,9 @@ It provides a simple example how to create a React based homepage that communica
 This example implements simple network functions which provide access to the ORKG backend and retrieve specific results.
 
 # How to Use
-You can simply for the project on GitHub.
+You can simply fork the project on GitHub.
 
-Then clone the repository to your local machine and run: `npm install`
+Then clone your repository to your local machine and run: `npm install`
 
 This will install all dependencies for the example project. 
 
