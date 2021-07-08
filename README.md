@@ -1,9 +1,13 @@
 # ORKG Pages Template
 This repository is mirrored on GitHub https://github.com/TIBHannover/orkg-pages-template. 
 
+
 It provides a simple example how to create a React based homepage that communicates with the ORKG backend. 
 
 This example implements simple network functions which provide access to the ORKG backend and retrieve specific results.
+
+If you have suggestions or find issues, please report them on the GitLab repository: https://gitlab.com/TIBHannover/orkg/orkg-pages-template
+
 
 # How to Use
 You can simply fork the project on GitHub.
@@ -26,10 +30,12 @@ This should point to your GitHub repository.
 
 Then run `npm run deploy`
 
+This will build the project and inject it into you repository. 
 
+(It creates a new branch for GitHub pages and enables them)
 
+You can find the link to the deployed page in the settings of the repository (Settings -> Pages). 
 
-This will build the project and inject it into you repository.
 
 
 
