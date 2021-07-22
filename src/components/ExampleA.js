@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './visWidgetConfig.css';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
-import { getComparisionById } from 'network/networkRequests';
+import { getComparisonById } from 'network/networkRequests';
 
 class ExampleA extends Component {
     constructor(props) {
@@ -19,7 +19,7 @@ class ExampleA extends Component {
     }
 
     getData = () => {
-        getComparisionById('R44930').then(dataFrame => {
+        getComparisonById('R44930').then(dataFrame => {
             this.setState({ requestedData: dataFrame, loading: false });
         });
     };
@@ -139,10 +139,9 @@ class ExampleA extends Component {
                         maxWidth: '200px'
                     }}
                 >
-                    {' '}
                     {dataValues.map(val => {
                         return val.label + ' ';
-                    })}{' '}
+                    })}
                 </td>
             );
         });
@@ -151,21 +150,14 @@ class ExampleA extends Component {
     /** Component Rendering Function **/
     render() {
         return (
-            <div
-                id="chartWidget"
-                style={{
-                    width: '94%',
-                    marginBottom: '30px',
-                    paddingLeft: '2.5%'
-                }}
-            >
-                <div id="chartWidgetHeader" className={'headerStyle'}>
+            <div>
+                <div className={'headerStyle'}>
                     Example A: Comparisons{' '}
                     <a style={{ color: '#e86161' }} href="https://www.orkg.org/orkg/comparison/R44930">
                         COVID-19 Reproductive Number Estimates
                     </a>
                 </div>
-                <div id="chartWidgetBody" className={'bodyStyle'}>
+                <div className={'bodyStyle'}>
                     {this.state.loading && (
                         <h2 className="h5">
                             <span>

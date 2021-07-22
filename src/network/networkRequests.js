@@ -33,14 +33,14 @@ export const submitGetRequest = (url, headers, send_token = false) => {
     });
 };
 
-export const getComparisionById = async id => {
+export const getComparisonById = async id => {
     const resourceURL = `https://www.orkg.org/orkg/api/resources/${id}/`;
     const resourceMetaData = await plainGetRequest(resourceURL);
 
     const statementsURL = `https://www.orkg.org/orkg/api/statements/subject/${id}/`;
     const statementsData = await plainGetRequest(statementsURL);
 
-    // get the comparision data
+    // get the comparison data
     const hasURL = `https://www.orkg.org/orkg/simcomp/visualization/?resourceId=${id}`;
     const hashResult = await plainGetRequest(hasURL);
     const hashIdRequest = hashResult.data.url;
