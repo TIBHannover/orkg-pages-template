@@ -55,21 +55,14 @@ class ExampleB extends Component {
     /** Component Rendering Function **/
     render() {
         return (
-            <div
-                id="chartWidget"
-                style={{
-                    width: '94%',
-                    marginBottom: '30px',
-                    paddingLeft: '2.5%'
-                }}
-            >
-                <div id="chartWidgetHeader" className={'headerStyle'}>
+            <div>
+                <div className={'headerStyle'}>
                     Example B: Paper{' '}
                     <a style={{ color: '#e86161' }} href="https://www.orkg.org/orkg/paper/R8186">
                         Open Research Knowledge Graph: Next Generation Infrastructure for Semantic Scholarly Knowledge
                     </a>
                 </div>
-                <div id="chartWidgetBody" className={'bodyStyle'}>
+                <div className={'bodyStyle'}>
                     {this.state.loading && (
                         <h2 className="h5">
                             <span>
