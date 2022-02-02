@@ -8,11 +8,12 @@ import { Container } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ExampleA from 'components/ExampleA';
 import ExampleB from 'components/ExampleB';
+import ESA from 'components/ESA';
 
 class App extends Component {
     constructor(props) {
         super(props);
-        this.githubRepoURL = '#CHANGE ME';
+        this.githubRepoURL = 'https://github.com/okarras/orkg-pages-template';
     }
 
     render() {
@@ -55,6 +56,7 @@ class App extends Component {
                             overflow: 'auto'
                         }}
                     >
+                        <ESA />
                         <ExampleA />
                         <ExampleB />
                     </Container>
