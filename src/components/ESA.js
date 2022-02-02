@@ -23,7 +23,7 @@ class ESA extends Component {
             this.setState({ requestedData: dataFrame, loading: false });
         });
     };
-    
+
     renderData = () => {
         // create an authors array;
         const authorStatements = this.state.requestedData.statementsData.content.filter(item => item.predicate.id === 'P27');
@@ -152,7 +152,7 @@ class ESA extends Component {
         return (
             <div>
                 <div className={'headerStyle'}>
-                    ESA: Comparisons{' '}
+                    TEST ESA: Comparisons{' '}
                     <a style={{ color: '#e86161' }} href="https://www.orkg.org/orkg/comparison/R153801">
                         Greenhouse Gas Reduction Scenarios for Germany
                     </a>
