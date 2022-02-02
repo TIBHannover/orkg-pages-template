@@ -90,7 +90,7 @@ class ESA extends Component {
                     </tr>
                 </thead>
                 <tbody>
-                    {Object.keys(dataFrame.data).map((data, id) => {
+                    {Object.keys(dataFrame.contributions).map((data, id) => {
                         return (
                             <tr key={'tr_id' + id} style={{ border: '1px solid black', borderTop: 'none' }}>
                                 <td

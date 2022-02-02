@@ -45,7 +45,11 @@ export const getComparisonById = async id => {
     const hashResult = await plainGetRequest(hasURL);
     const hashIdRequest = hashResult.data.url;
 
-    const comparisonDataURL = `https://www.orkg.org/orkg/simcomp/compare/${hashIdRequest}`;
+    const params = hashIdRequest.split('&');
+    const pr = params.find(param => param.startsWith('properties='));
+    const short_url = hashResult.data.url.replace(pr + '&', '');
+
+    const comparisonDataURL = `https://www.orkg.org/orkg/simcomp/compare/${short_url}`;
     const comparisonData = await plainGetRequest(comparisonDataURL);
 
     return {

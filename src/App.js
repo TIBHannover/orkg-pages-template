@@ -57,7 +57,6 @@ class App extends Component {
                         }}
                     >
                         <ESA />
-                        <ExampleA />
                         <ExampleB />
                     </Container>
                 </Container>
