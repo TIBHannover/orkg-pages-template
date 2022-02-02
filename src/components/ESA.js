@@ -23,8 +23,7 @@ class ESA extends Component {
             this.setState({ requestedData: dataFrame, loading: false });
         });
     };
-    //<div>Comparison Data:</div>
-    //{this.renderComparisonTable()}
+    
     renderData = () => {
         // create an authors array;
         const authorStatements = this.state.requestedData.statementsData.content.filter(item => item.predicate.id === 'P27');
@@ -44,6 +43,8 @@ class ESA extends Component {
                             return item.object.label + '; ';
                         })}
                     </div>
+                    <div>Comparison Data:</div>
+                    {this.renderComparisonTable()}
                 </div>
             );
         }
