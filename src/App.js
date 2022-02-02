@@ -52,7 +52,6 @@ class App extends Component {
                             marginLeft: '10%',
                             marginRight: '10%',
                             maxWidth: '80%',
-                            height: 'calc(100vh - 40px)',
                             overflow: 'auto'
                         }}
                     >
